@@ -1,0 +1,45 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.videobasic.MainActivity"
+    >
+
+    <item
+        android:id="@+id/duration"
+        android:title="Set Max Duration"
+        />
+
+    <item
+        android:id="@+id/quality"
+        android:title="Quality"
+        >
+
+        <menu>
+            <item
+            android:id="@+id/qualityLow"
+            android:title="Low"
+            />
+
+            <item
+                android:id="@+id/qualityMed"
+                android:title="Medium"
+                />
+
+            <item
+                android:id="@+id/qualityHigh"
+                android:title="High"
+                />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/listItem"
+        android:title="Files"
+        />
+
+    <item
+        android:id="@+id/dropbox"
+        android:title="Dropbox login"
+        />
+
+</menu>

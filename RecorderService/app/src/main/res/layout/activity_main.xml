@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnRecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RECORD"
+        android:visibility="invisible"
+        />
+
+    <CheckBox
+        android:id="@+id/showPreview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:text="Show Preview"
+        android:visibility="invisible"
+        />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        >
+
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/maxDurationEdit"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_toStartOf="@+id/editTextButton"
+        android:hint="Enter Maximum Duration"
+        android:visibility="invisible"
+        android:inputType="number"
+        />
+
+    <Button
+        android:id="@+id/editTextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="3dp"
+        android:text="OK"
+        android:visibility="invisible"/>
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/maxDurationEdit"
+        android:layout_marginTop="2dp"
+        android:max="120"
+        android:progress="0"
+        android:visibility="invisible"
+        />
+
+    <TextView
+        android:id="@+id/maxDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekBar"
+        android:text="Set Recording Duration: Unlimited"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        />
+
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        android:textColor="#ff0000"
+        android:textSize="100dp"
+        />
+
+
+    <ImageView
+        android:id="@+id/switchCamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/cameraswitch"
+        />
+
+    <ImageView
+        android:id="@+id/ivRecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:src="@drawable/video_record"
+        />
+
+</RelativeLayout>

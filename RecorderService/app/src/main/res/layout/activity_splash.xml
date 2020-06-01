@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_login"
+    tools:context=".SplashActivity">
+
+    <ImageView
+        android:id="@+id/imgView_logo"
+        android:layout_gravity="center"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/ic_logo"
+        android:adjustViewBounds="true"
+        android:layout_centerInParent="true"
+        android:scaleType="fitCenter"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:text="loading..."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="25dp"
+        android:layout_above="@id/progress"
+        android:textColor="#1d8f53"/>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        style="@android:style/Widget.ProgressBar.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/appCreated"
+        />
+
+    <TextView
+        android:id="@+id/appCreated"
+        android:text="App Created By:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_above="@id/manish"
+        android:textSize="25dp"
+        android:textColor="#18df53"/>
+
+    <TextView
+        android:id="@+id/manish"
+        android:text="Manish Maharjan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/nitesh"
+        android:layout_centerInParent="true"
+        android:textSize="25dp"
+        android:textColor="#18df53"/>
+
+    <TextView
+        android:id="@+id/nitesh"
+        android:text="Nitesh Shrestha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_above="@id/kamana"
+        android:textSize="25dp"
+        android:textColor="#18df53"/>
+
+    <TextView
+        android:id="@+id/kamana"
+        android:text="Kamana Shrestha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_above="@id/manjil"
+        android:textSize="25dp"
+        android:textColor="#18df53"/>
+
+    <TextView
+        android:id="@+id/manjil"
+        android:text="Manjil Parajuli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/utsab"
+        android:textSize="25dp"
+        android:textColor="#18df53"
+        />
+
+    <TextView
+        android:id="@+id/utsab"
+        android:text="Utsab Sainju"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:textSize="25dp"
+        android:textColor="#18df53"
+        />
+
+</RelativeLayout>
